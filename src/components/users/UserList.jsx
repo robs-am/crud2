@@ -1,15 +1,35 @@
-import React from 'react'
-import "./UserList.css"
-
-const users = [];
+import React from "react";
+import "./UserList.css";
 
 const UserList = () => {
-  return (
-    <div className='grid-container'>
-      {users.lenght ? renderCard() : <p>No User</p>}
-    
-    </div>
-  )
-}
+  const users = [
+    {
+      id: "1",
+      name: "Amanda",
+      email: "amanda@email.com",
+    },
 
-export default UserList
+    { id: "2", name: "Vitor", email: "vitor@email.com" },
+  ];
+
+  const renderCard = () =>
+    users.map((user) => (
+      <div>
+        <div>
+          <h3 className="userName">{user.name}</h3>
+          <span className="userEmail">{user.email}</span>
+          
+        </div>
+      </div>
+    ));
+
+  return (
+    <>
+      <div className="grid-container">
+        {users.length ? renderCard() : <p className="noUser">No User</p>}
+      </div>
+    </>
+  );
+};
+
+export default UserList;

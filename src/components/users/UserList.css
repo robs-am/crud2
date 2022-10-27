@@ -1,3 +1,22 @@
 .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    color:black;
+}
+
+.noUser {
+    color: #374151;
+    
+}
+
+.userName {
+    color:#374151;
+    font-size: large;
+    font-weight: bold;
+}
+
+.userEmail {
+    color: #4b5563;
     
 }

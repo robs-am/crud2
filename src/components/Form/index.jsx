@@ -1,6 +1,37 @@
 import styled from "styled-components";
 import { useState } from "react";
 
+
+
+const Form = ({data, setData, dataEdit, isOpen, onClose}) => {
+    const [name, setName] = useState(dataEdit.name || "");
+    const [email, setEmail] = useState(dataEdit.email ||"");
+
+  return (
+    <div>
+      <FormContainer>
+        <InputArea>
+            <Label>Nome</Label>
+            <Input name="nome" />
+        </InputArea>
+        <InputArea>
+            <Label>Email</Label>
+            <Input name="email" type="email" />
+        </InputArea>
+        <InputArea>
+            <Label>Telefone</Label>
+            <Input name="fone"  />
+        </InputArea>
+        <InputArea>
+            <Label>Data de Nascimento</Label>
+            <Input name="data_nascimento" type="date"  />
+        </InputArea>
+        <Button type="submit">SALVAR</Button>
+      </FormContainer>
+    </div>
+  );
+};
+
 //styled-components//
 
 const FormContainer = styled.form`
@@ -39,34 +70,4 @@ background-color: #2c73d2;
 color: white;
 height: 42px;
 `;
-
-
-const Form = ({data, setData, dataEdit, isOpen, onClose}) => {
-    
-
-  return (
-    <div>
-      <FormContainer>
-        <InputArea>
-            <Label>Nome</Label>
-            <Input name="nome" />
-        </InputArea>
-        <InputArea>
-            <Label>Email</Label>
-            <Input name="email" type="email" />
-        </InputArea>
-        <InputArea>
-            <Label>Telefone</Label>
-            <Input name="fone"  />
-        </InputArea>
-        <InputArea>
-            <Label>Data de Nascimento</Label>
-            <Input name="data_nascimento" type="date"  />
-        </InputArea>
-        <Button type="submit">SALVAR</Button>
-      </FormContainer>
-    </div>
-  );
-};
-
 export default Form;

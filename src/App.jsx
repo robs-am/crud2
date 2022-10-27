@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Form from "./components/Form"
+import Modal from "./components/Modal"
 import Global from "./styles/global"
 
 
@@ -10,7 +10,7 @@ function App() {
       <Container>
       <Title>Cadastro de Usuários</Title>
       <Global />
-      <Form />
+      <Modal/>
       </Container>
     </div>
   )

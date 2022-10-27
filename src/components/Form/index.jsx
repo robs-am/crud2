@@ -45,7 +45,7 @@ const Form = () => {
 
   return (
     <div>
-      <FormContainer ref={ref}>
+      <FormContainer>
         <InputArea>
             <Label>Nome</Label>
             <Input name="nome" />

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useState } from "react";
 
 //styled-components//
 
@@ -40,7 +41,7 @@ height: 42px;
 `;
 
 
-const Form = () => {
+const Form = ({data, setData, dataEdit, isOpen, onClose}) => {
     
 
   return (

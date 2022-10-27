@@ -1,9 +1,14 @@
 import React from 'react'
 import "./UserList.css"
 
+const users = [];
+
 const UserList = () => {
   return (
-    <div><h1>users</h1></div>
+    <div className='grid-container'>
+      {users.lenght ? renderCard() : <p>No User</p>}
+    
+    </div>
   )
 }
 

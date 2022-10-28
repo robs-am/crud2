@@ -37,6 +37,10 @@
 
 }
 
+.userCard:hover {
+    transform: scale(1.05);
+    transition: .5s ease-out;
+}
 
 
 .userName {
@@ -83,4 +87,8 @@
     border:none;
 
     cursor: pointer;
+}
+
+.faEdit:hover, .faTrash:hover {
+    filter: brightness(85%);
 }

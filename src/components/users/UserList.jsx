@@ -5,6 +5,7 @@ import { FaTrash, FaEdit } from "react-icons/fa";
 import Button from "../button/Button";
 
 
+
 const UserList = () => {
   const users = [
       {id: "1", name: "Amanda", email: "amanda@email.com", fone: "95524332"},
@@ -15,7 +16,7 @@ const UserList = () => {
   const renderCard = () =>
     users.map((user) => (
       <div>
-        <Button>Add User</Button>
+        
         <div className="userCard">
           <h3 className="userName">{user.name}</h3>
           <span className="userEmail">{user.email}</span>
@@ -32,6 +33,7 @@ const UserList = () => {
 
   return (
     <>
+    
       <div className="grid-container">
         {users.length ? renderCard() : <p className="noUser">No User</p>}
       </div>

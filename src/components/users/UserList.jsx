@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import "./UserList.css";
 import { FaTrash, FaEdit } from "react-icons/fa";
+import Button from "../button/Button";
+
 
 const UserList = () => {
   const users = [
@@ -13,6 +15,7 @@ const UserList = () => {
   const renderCard = () =>
     users.map((user) => (
       <div>
+        <Button>Add User</Button>
         <div className="userCard">
           <h3 className="userName">{user.name}</h3>
           <span className="userEmail">{user.email}</span>

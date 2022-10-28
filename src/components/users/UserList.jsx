@@ -7,18 +7,19 @@ const UserList = () => {
       id: "1",
       name: "Amanda",
       email: "amanda@email.com",
+      fone: "95524332"
     },
 
-    { id: "2", name: "Vitor", email: "vitor@email.com" },
+    { id: "2", name: "Vitor", email: "vitor@email.com", fone: "95824639" },
   ];
 
   const renderCard = () =>
     users.map((user) => (
       <div>
-        <div>
+        <div className="userCard">
           <h3 className="userName">{user.name}</h3>
           <span className="userEmail">{user.email}</span>
-          
+          <span className="userFone">{user.fone}</span>
         </div>
       </div>
     ));

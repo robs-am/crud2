@@ -1,17 +1,38 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    color:black;
+    gap: 3em;
+   
+    flex-wrap: wrap;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
 
 .noUser {
     color: #374151;
     
 }
 
+.userCard {
+    width: 350px;
+    
+    height: auto;
+    background-color: #72A1E5;
+    
+    padding: 1.5em;
+    border-radius: 0.2em;
+}
+
 .userName {
     color:#374151;
+    padding-bottom: 0.2em;
     font-size: large;
     font-weight: bold;
 }
@@ -19,4 +40,12 @@
 .userEmail {
     color: #4b5563;
     
+    
+    
+}
+
+.userFone {
+    display: block;
+    color: #4b5563;
+    padding-top: 0.2em;
 }

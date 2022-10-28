@@ -6,8 +6,8 @@ function App() {
   
 
   return (
-    <div className="App">
-      
+    <div className="container">
+    <h1 className="title">CRUD React</h1>
      <UserList />
     </div>
   )

@@ -16,8 +16,16 @@ body {
    
 }
 
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    
+    row-gap: 1em;
+}
+
 .title {
     color: #f8f8f8;
-    margin-block: 1em;
+    margin: 0.2em;
     font-size: 40px;
 } 

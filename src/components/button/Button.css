@@ -5,5 +5,19 @@
     padding:1em;
     font-weight: 500;
     
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start:1;
+    grid-row-end:3;
+  
+
+}
+
+.btn-addUser:hover {
+    cursor: pointer;
+    filter: brightness(85%);
 }

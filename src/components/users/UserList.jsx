@@ -1,5 +1,6 @@
 import React from "react";
 import "./UserList.css";
+import { FaTrash, FaEdit } from "react-icons/fa";
 
 const UserList = () => {
   const users = [
@@ -20,6 +21,11 @@ const UserList = () => {
           <h3 className="userName">{user.name}</h3>
           <span className="userEmail">{user.email}</span>
           <span className="userFone">{user.fone}</span>
+          <button className="faTrash"><FaTrash /></button>
+          <button className="faEdit"><FaEdit /></button>
+          
+          
+          
         </div>
       </div>
     ));
@@ -29,6 +35,8 @@ const UserList = () => {
       <div className="grid-container">
         {users.length ? renderCard() : <p className="noUser">No User</p>}
       </div>
+     
+      
     </>
   );
 };

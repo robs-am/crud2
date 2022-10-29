@@ -10,6 +10,7 @@ import NavBar from "./components/navbar/NavBar";
 import Home from './components/home/Home';
 
 import Usuarios from "./components/users/Usuarios";
+import AddUser from './components/users/AddUser';
 
 console.log(window.location);
 
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/usuarios" element={<Usuarios />} />
+          <Route path="/add-user" element={<AddUser />} />
           
         </Routes>
       

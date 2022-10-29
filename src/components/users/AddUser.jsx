@@ -4,7 +4,7 @@ import Button from './../button/Button';
  
 const AddUser = () => {
   const [values, setValues] = useState ({
-    name: "",
+    nome: "",
     email: "",
     tel: "",
   });
@@ -13,14 +13,17 @@ const AddUser = () => {
     <div>
       <TextField
         label="Nome"
+        value={values.nome}
         inputProps={{type:'text', placeholder: 'Kurt Cobain'}} />
         <br />
          <TextField
         label="Email"
+        value={values.email}
         inputProps={{type:'email', placeholder: 'email@email.com' }} required />
         <br />
         <TextField
         label="Telefone"
+        value={values.tel}
         inputProps={{type:'tel', placeholder: '(xx) xxxxx - xxxx ' }} required />
         <br />
         <Button>Enviar</Button>

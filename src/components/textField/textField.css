@@ -1,0 +1,26 @@
+
+.textField-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.textFieldLabel {
+    color:#e5e7eb;
+    margin-bottom: 0.5em;
+    font-size: 16px;
+    
+}
+
+.textFieldInput {
+    background-color: #262F40;
+    border-radius: 0.1em;
+    outline: none;
+    min-width:300px;
+    padding-block: 0.8em;
+    padding-inline: 1em;
+    color:#D1D4DC;
+    border-radius: 0.3em;
+    border: 0.5px solid #3f4a5de6;
+    font-size: 14px;
+    
+}

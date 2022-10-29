@@ -1,15 +1,17 @@
 import React from 'react'
 import "./textField.css"
 
-const TextField = ({label, inputProps, onChange}) => {
+const TextField = ({label, inputProps, onChange, value}) => {
   return (
-    <>
-    <div>{label}</div>
-    <input {...inputProps}
+    <div className='textField-container'>
+    <label className='textFieldLabel'>{label}</label>
+    <input className='textFieldInput'
+    {...inputProps}
     onChange={onChange}
+    value={value}
     />
-    </>
+    </div>
   )
 }
 
-export default textField
+export default TextField

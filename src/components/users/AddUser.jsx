@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TextField from '../textField/textField'
 import Button from './../button/Button';
  
 const AddUser = () => {
+  const [values, setValues] = useState ({
+    name: "",
+    email: "",
+    tel: "",
+  });
+
   return (
     <div>
       <TextField

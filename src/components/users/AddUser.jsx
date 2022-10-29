@@ -14,16 +14,19 @@ const AddUser = () => {
       <TextField
         label="Nome"
         value={values.nome}
+        onChange={(e) => setValues({...values, nome: e.target.value})}
         inputProps={{type:'text', placeholder: 'Kurt Cobain'}} />
         <br />
          <TextField
         label="Email"
         value={values.email}
+        onChange={(e) => setValues({...values, email: e.target.value})}
         inputProps={{type:'email', placeholder: 'email@email.com' }} required />
         <br />
         <TextField
         label="Telefone"
         value={values.tel}
+        onChange={(e) => setValues({...values, tel: e.target.value})}
         inputProps={{type:'tel', placeholder: '(xx) xxxxx - xxxx ' }} required />
         <br />
         <Button>Enviar</Button>

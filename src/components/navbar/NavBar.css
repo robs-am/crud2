@@ -1,0 +1,13 @@
+.nav {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: #121721;
+  width: 200px;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+ul {
+    list-style: none;
+}

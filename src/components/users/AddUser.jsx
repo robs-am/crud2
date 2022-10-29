@@ -7,6 +7,12 @@ const AddUser = () => {
       <TextField
         label="Nome"
         inputProps={{type:'text', placeholder: 'Kurt Cobain'}} />
+         <TextField
+        label="Email"
+        inputProps={{type:'email', placeholder: 'email@email.com' }} required />
+        <TextField
+        label="Telefone"
+        inputProps={{type:'tel', placeholder: '(xx) xxxxx - xxxx ' }} required />
     </div>
   )
 }

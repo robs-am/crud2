@@ -1,6 +1,3 @@
-* {
-    color:#EDE3E4;
-}
 
 .grid-container {
     display: grid;
@@ -64,7 +61,7 @@
 
 .userName {
     font-weight: 400;
-    
+    color:#FAFAFA;
     padding-bottom: 0.2em;
     font-size: large;
     font-weight: bold;
@@ -72,12 +69,13 @@
 
 
 .userEmail {
-    color: #f8f8f8;
+    color: #D6D6D6;
     grid-column-start:1;
     grid-column-end:2;
 }
 
 .userFone {
+    color: #D6D6D6;
     display: block;
     grid-column-start:1;
     grid-column-end:2;
@@ -85,6 +83,7 @@
 }
 
 .faTrash {
+    color: #EBEBEB;
     grid-column-start:2;
     grid-column-end:2;
     grid-row-start:1;
@@ -97,6 +96,7 @@
 }
 
 .faEdit {
+    color: #EBEBEB;
     grid-column-start:2;
     grid-column-end:2;
     grid-row-start:2;

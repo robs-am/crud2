@@ -14,13 +14,13 @@ const NavBar = () => {
         <ul className="links">
           <Link to="/">
             <li>
-              <AiFillHome />
+              <AiFillHome size={20} />
               Home
             </li>
           </Link>
           <Link to="/usuarios">
             <li>
-              <FaUserFriends />
+              <FaUserFriends size={20} />
               Usuarios
             </li>
           </Link>

@@ -1,13 +1,41 @@
 .nav {
   position: absolute;
+  
   top: 0%;
   left: 0%;
   background-color: #121721;
   width: 200px;
   height: 100vh;
   overflow-y: hidden;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
 }
 
-ul {
+.links {
     list-style: none;
+    text-decoration: none;
+    padding:1em;
+    height: 70vh;
+    
+    
+}
+
+li {
+  padding: 0.5em;
+  color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+li:hover {
+  filter: brightness(85%);
+}
+
+a {
+  text-decoration: none;
 }

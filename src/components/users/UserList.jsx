@@ -6,6 +6,7 @@ import Button from "../button/Button";
 
 
 
+
 const UserList = () => {
   const users = [
       {id: "1", name: "Amanda", email: "amanda@email.com", fone: "95524332"},
@@ -15,6 +16,7 @@ const UserList = () => {
 
   const renderCard = () =>
     users.map((user) => (
+      
       <div>
         
         <div className="userCard">
@@ -32,12 +34,12 @@ const UserList = () => {
     ));
 
   return (
-    <>
-    
+    <div>
+      <Button>Add User</Button>
       <div className="grid-container">
         {users.length ? renderCard() : <p className="noUser">No User</p>}
       </div>
-    </>
+    </div>
   );
 };
 

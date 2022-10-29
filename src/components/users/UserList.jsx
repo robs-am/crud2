@@ -34,7 +34,7 @@ const UserList = () => {
     ));
 
   return (
-    <div>
+    <div className="addUserContainer">
       <Button>Add User</Button>
       <div className="grid-container">
         {users.length ? renderCard() : <p className="noUser">No User</p>}

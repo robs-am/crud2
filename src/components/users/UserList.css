@@ -4,12 +4,24 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:  1fr 1fr;
     grid-template-rows:  2fr;
 
     grid-column-start: 1;
     grid-column-end: 3;
     gap: 3em;
+   
+    
+}
+
+.addUserContainer {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  2fr;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    gap: 2em;
    
     flex-wrap: wrap;
 }
@@ -17,9 +29,12 @@
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
+    
 }
+
+
 
 
 
@@ -43,7 +58,7 @@
 }
 
 .userCard:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     transition: .5s ease-out;
 }
 

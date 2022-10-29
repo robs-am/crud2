@@ -3,10 +3,13 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
 
-import UserList from "./components/users/UserList";
 
-import AddUser from "./components/users/AddUser";
+
+
 import NavBar from "./components/navbar/NavBar";
+import Home from './components/home/Home';
+
+import Usuarios from "./components/users/Usuarios";
 
 console.log(window.location);
 
@@ -18,8 +21,8 @@ function App() {
      
         <NavBar />
         <Routes>
-          <Route path="/" element={<UserList />} />
-          <Route path="/add-user" element={<AddUser />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/usuarios" element={<Usuarios />} />
         </Routes>
       
       

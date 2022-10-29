@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+
 import "./UserList.css";
 import { FaTrash, FaEdit } from "react-icons/fa";
 import Button from "../button/Button";
@@ -10,8 +10,8 @@ const UserList = () => {
   const users = [
       {id: "1", name: "Amanda", email: "amanda@email.com", fone: "95524332"},
       { id: "2", name: "Vitor", email: "vitor@email.com", fone: "95824639" },
-    ],
-    setUsers = useState("");
+    ];
+    
 
   const renderCard = () =>
     users.map((user) => (

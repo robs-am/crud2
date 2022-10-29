@@ -29,7 +29,7 @@ const AddUser = () => {
         onChange={(e) => setValues({...values, tel: e.target.value})}
         inputProps={{type:'tel', placeholder: '(xx) xxxxx - xxxx ' }} required />
         <br />
-        <Button>Enviar</Button>
+        <Button onClick={handleAddUser}>Enviar</Button>
     </div>
   )
 }

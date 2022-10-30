@@ -32,10 +32,7 @@
 
 
 
-
-
-
-.userCard {
+#userCard {
     width: 300px;
     height: auto;
     
@@ -53,13 +50,13 @@
 
 }
 
-.userCard:hover {
+#userCard:hover {
     transform: scale(1.03);
     transition: .5s ease-out;
 }
 
 
-.userName {
+#userName {
     font-weight: 400;
     color:#FAFAFA;
     padding-bottom: 0.2em;
@@ -68,13 +65,13 @@
 }
 
 
-.userEmail {
+#userEmail {
     color: #D6D6D6;
     grid-column-start:1;
     grid-column-end:2;
 }
 
-.userFone {
+#userFone {
     color: #D6D6D6;
     display: block;
     grid-column-start:1;

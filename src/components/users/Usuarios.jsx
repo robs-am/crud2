@@ -16,12 +16,12 @@ const Usuarios = () => {
   const renderCard = () =>
     users.map((user) => (
       
-      <div>
+      <div key={user.id}>
         
-        <div id="userCard"> 
-          <h3 id="userName" key={user.name}>{user.name}</h3>
-          <span id="userEmail" key={user.email}>{user.email}</span>
-          <span id="userFone" key={user.fone}>{user.fone}</span>
+        <div id="userCard" > 
+          <h3 id="userName">{user.name}</h3>
+          <span id="userEmail">{user.email}</span>
+          <span id="userFone">{user.fone}</span>
           <button className="faTrash">
             <FaTrash size={20} />
           </button>

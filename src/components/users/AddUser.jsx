@@ -4,25 +4,29 @@ import TextField from "../textField/textField";
 import Button from "./../button/Button";
 
 const AddUser = () => {
-  
-  const navigate = useNavigate();
   const [values, setValues] = useState({
     name: "",
     email: "",
     fone: "",
   });
 
-  const handleAddUser = () => {
-    setValues({ name: "", email: "", fone: "" }); //limpa o formulario apos envio
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [fone, setfone] = useState("");
 
+  const navigate = useNavigate();
+
+  const handleAddUser = (e) => {
+    e.preventDefault();
     console.log(values);
 
-    navigate("/usuarios");
+    navigate("/usuarios/");
   };
 
   return (
     <div>
       <TextField
+        required={true}
         label="Nome"
         value={values.name}
         onChange={(e) => setValues({ ...values, name: e.target.value })}
@@ -30,6 +34,7 @@ const AddUser = () => {
       />
       <br />
       <TextField
+        required={true}
         label="Email"
         value={values.email}
         onChange={(e) => setValues({ ...values, email: e.target.value })}
@@ -37,6 +42,7 @@ const AddUser = () => {
       />
       <br />
       <TextField
+        required={true}
         label="Telefone"
         value={values.fone}
         onChange={(e) => setValues({ ...values, fone: e.target.value })}

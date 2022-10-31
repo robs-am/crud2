@@ -3,20 +3,26 @@ import { useNavigate } from "react-router";
 import TextField from "../textField/textField";
 import Button from "./../button/Button";
 
-const AddUser = () => {
+const AddUser = (name, email, fone) => {
   const [values, setValues] = useState({
     name: "",
     email: "",
     fone: "",
   });
 
- 
-
   const navigate = useNavigate();
 
   function handleAddUser(e) {
     e.preventDefault();
     console.log(values);
+
+    localStorage.setItem("name", "name");
+    localStorage.setItem("email", "email");
+    localStorage.setItem("fone", "fone");
+
+    
+ 
+    
 
     navigate("/usuarios");
   }

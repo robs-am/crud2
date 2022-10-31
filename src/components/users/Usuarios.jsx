@@ -8,8 +8,7 @@ import { Link } from "react-router-dom";
 
 const Usuarios = () => {
   const users = [
-      {id: '1', name: "Kurt Cobain", email:"email@email.com", fone:"2199844557"},
-      {id: '2', name: "Jim Morrison", email:"email@email.com", fone:"2199844557"}
+      
     ];
     
 

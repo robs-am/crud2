@@ -7,6 +7,8 @@ import Home from "./components/home/Home";
 import Usuarios from "./components/users/Usuarios";
 import AddUser from "./components/users/AddUser";
 
+
+
 function App() {
   return (
     <div className="container">
@@ -14,8 +16,9 @@ function App() {
 
       <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/usuarios" element={<Usuarios />} />
+      <Route path="/" element={<Home />} />
+        <Route path="/usuarios" element={<Usuarios/>} />
+        
         <Route path="/add-user" element={<AddUser />} />
       </Routes>
     </div>

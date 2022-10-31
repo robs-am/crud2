@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./UserList.css";
+import "./Usuarios.css";
 import { FaTrash, FaEdit } from "react-icons/fa";
 import Button from "../button/Button";
 import { Link } from "react-router-dom";
@@ -37,7 +37,7 @@ const Usuarios = () => {
     <div className="addUserContainer">
       <Button><Link to="/add-user">Adicionar Usuário</Link></Button>
       <div className="grid-container">
-        {users.length ? renderCard() : <p className="noUser">No User</p>}
+        {users.length ? renderCard() : <p className="noUser">Clique para começar adicionando um novo usuário</p>}
       </div>
     </div>
   );

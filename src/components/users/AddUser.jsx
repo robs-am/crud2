@@ -10,18 +10,16 @@ const AddUser = () => {
     fone: "",
   });
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [fone, setfone] = useState("");
+ 
 
   const navigate = useNavigate();
 
-  const handleAddUser = (e) => {
+  function handleAddUser(e) {
     e.preventDefault();
     console.log(values);
 
-    navigate("/usuarios/");
-  };
+    navigate("/usuarios");
+  }
 
   return (
     <div>

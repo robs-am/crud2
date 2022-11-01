@@ -1,14 +1,15 @@
 import React from "react";
 
-import "./Usuarios.css";
+import "./UserList.css";
 import { FaTrash, FaEdit } from "react-icons/fa";
-import Button from "../button/Button";
+import Button from "./src/components/button/Button";
 import { Link } from "react-router-dom";
 
 
-const Usuarios = () => {
+const UserList = () => {
   const users = [
-      {name: "", email: "", fone:""}
+      {id: '1', name: "Kurt Cobain", email:"email@email.com", fone:"2199844557"},
+      {id: '2', name: "Jim Morrison", email:"email@email.com", fone:"2199844557"}
     ];
     
 
@@ -42,4 +43,4 @@ const Usuarios = () => {
   );
 };
 
-export default Usuarios;
+export default UserList;

@@ -1,22 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router";
 import TextField from "../textField/textField";
 import Button from "./../button/Button";
 
-const AddUser = () => {
-  const [values, setValues] = useState({ name: "", email: "", fone: "" });
+import { Context } from "../../contexts/Contexts";
 
+const AddUser = () => {
+  const { context, dispatch } = useContext(Context);
+  const [ values, setValues ] = useState({ name: "", email: "", fone: "" });
   const navigate = useNavigate();
 
   function handleAddUser(e) {
     e.preventDefault();
-    console.log(values);
+    const users = context.users.status;
+
+    dispatch({
+      type: "CHANGE_USERS",
+      payload: {
+        status: [...users, values]
+      },
+    });
 
     navigate("/usuarios");
   }
 
   return (
-    <div>
+    <form onSubmit={handleAddUser}>
       <TextField
         required={true}
         label="Nome"
@@ -41,8 +50,8 @@ const AddUser = () => {
         inputProps={{ type: "tel", placeholder: "(xx) xxxxx - xxxx " }}
       />
       <br />
-      <Button onClick={handleAddUser}>Cadastrar</Button>
-    </div>
+      <Button type="submit">Cadastrar</Button>
+    </form>
   );
 };
 
